@@ -43,7 +43,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         homeCollectionView.register(UINib(nibName: "HomeCollectionViewHeaderCell", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier:"HomeCollectionViewHeaderCell")
         
         homeCollectionView.reloadData()
-        
+        print("dfrffr")
     }
     override func viewWillAppear(_ animated: Bool) {
         homeCollectionView.reloadData()
