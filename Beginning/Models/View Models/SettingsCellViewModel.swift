@@ -10,5 +10,6 @@ import UIKit
 struct SettingsCellViewModel  {
     
     let title: String
-    let  leftImage: UIImage
+    let  leftImage: UIImage?
+    let identifier: String
 }

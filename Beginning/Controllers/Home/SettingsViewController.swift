@@ -22,17 +22,27 @@ class SettingsViewController: UIViewController, UICollectionViewDelegate, UIColl
         settingsCollectionView.delegate = self
     }
     
-    var settingArray = ["Kullanıcı Bilgileri", "Şifremi değiştir", "Önceki Şikayetlerim", "Önceki Anketlerim", "Çıkış Yap"]
+    var settingsArray = [
+        SettingsCellViewModel(title: "Kullanıcı Bilgileri", leftImage: nil, identifier: "user_details"),
+        SettingsCellViewModel(title: "Şifremi Değiştir", leftImage: nil, identifier: "change_password"),
+        SettingsCellViewModel(title: "Önceki Şikayetlerim", leftImage: nil, identifier: "previous_complaints"),
+        SettingsCellViewModel(title: "Çıkış Yap", leftImage: nil, identifier: "log_out")
+    ]
     
     // MARK: CollectionViewCell Functions
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return settingArray.count
+        return settingsArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SettingsCollectionViewCell", for: indexPath) as! SettingsCollectionViewCell
-        return cell
+        cell.viewModel = settingsArray[indexPath.row]
+        cell.onButtonTapped =  {[unowned self] (viewModel) in
+            self.foo(viewModel: viewModel)
+        }
+            return cell
         
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -44,10 +54,20 @@ class SettingsViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        return UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
     }
 
-
+    func foo(viewModel: SettingsCellViewModel){
+        if viewModel.identifier == "user_details" {
+            self.performSegue(withIdentifier:"showUserDetailsSegue", sender: viewModel)
+        }
+        else if viewModel.identifier == "change_password" {
+            self.performSegue(withIdentifier: "showChangePasswordSegue", sender: viewModel)
+        }
+        else if viewModel.identifier == "previous_complaints" {
+            self.performSegue(withIdentifier: "showPreviousComplaintsSegue", sender: viewModel)
+    }
+    }
 
 
 }

@@ -22,6 +22,7 @@
 		F219EFE623742C5000ED0A88 /* SettingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F219EFE423742C5000ED0A88 /* SettingsCollectionViewCell.swift */; };
 		F219EFE723742C5000ED0A88 /* SettingsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F219EFE523742C5000ED0A88 /* SettingsCollectionViewCell.xib */; };
 		F219EFE923742EAE00ED0A88 /* SettingsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F219EFE823742EAE00ED0A88 /* SettingsCellViewModel.swift */; };
+		F2202A1B237C75A200D941A6 /* PreviousComplaintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2202A1A237C75A200D941A6 /* PreviousComplaintsViewController.swift */; };
 		F2671FC6231DB9AF002EF034 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2671FC5231DB9AF002EF034 /* UIView+Extension.swift */; };
 		F2671FC8231DB9D2002EF034 /* TextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2671FC7231DB9D2002EF034 /* TextFieldView.xib */; };
 		F2671FCA231FB26E002EF034 /* UIColorClassExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2671FC9231FB26E002EF034 /* UIColorClassExtension.swift */; };
@@ -67,6 +68,7 @@
 		F219EFE423742C5000ED0A88 /* SettingsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCollectionViewCell.swift; sourceTree = "<group>"; };
 		F219EFE523742C5000ED0A88 /* SettingsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCollectionViewCell.xib; sourceTree = "<group>"; };
 		F219EFE823742EAE00ED0A88 /* SettingsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellViewModel.swift; sourceTree = "<group>"; };
+		F2202A1A237C75A200D941A6 /* PreviousComplaintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousComplaintsViewController.swift; sourceTree = "<group>"; };
 		F2671FC5231DB9AF002EF034 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		F2671FC7231DB9D2002EF034 /* TextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldView.xib; sourceTree = "<group>"; };
 		F2671FC9231FB26E002EF034 /* UIColorClassExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorClassExtension.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 				F2997055233B95110035BF4E /* ComplaintDetailViewController.swift */,
 				F299705E233CF32D0035BF4E /* AddComplaintViewController.swift */,
 				F219EFE12374290400ED0A88 /* SettingsViewController.swift */,
+				F2202A1A237C75A200D941A6 /* PreviousComplaintsViewController.swift */,
 				F20F98C92343E81F0041F526 /* AddComplaintNavigationViewController.swift */,
 			);
 			path = Home;
@@ -414,6 +417,7 @@
 				F219EFCD2367844A00ED0A88 /* SurveyDetailViewController.swift in Sources */,
 				F281B96C231D511200B21170 /* TextFieldView.swift in Sources */,
 				F219EFE623742C5000ED0A88 /* SettingsCollectionViewCell.swift in Sources */,
+				F2202A1B237C75A200D941A6 /* PreviousComplaintsViewController.swift in Sources */,
 				F2671FFD2328F7CA002EF034 /* HomeListCollectionViewCell.swift in Sources */,
 				F219EFDA23680A8C00ED0A88 /* SurveyCollectionViewScaleCell.swift in Sources */,
 				F219EFE22374290400ED0A88 /* SettingsViewController.swift in Sources */,

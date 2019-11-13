@@ -13,6 +13,8 @@ class SettingsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var leftImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     
+    var onButtonTapped:((SettingsCellViewModel)->())?
+
     var viewModel: SettingsCellViewModel! {
         didSet {
             leftImageView.image = viewModel.leftImage
@@ -25,6 +27,6 @@ class SettingsCollectionViewCell: UICollectionViewCell {
     }
 
     @IBAction func onTappedSettingButton(_ sender: UIButton) {
-        
+        onButtonTapped?(viewModel)
     }
 }
