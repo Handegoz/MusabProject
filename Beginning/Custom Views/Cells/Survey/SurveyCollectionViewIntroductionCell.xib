@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SurveyCollectionViewIntroductionCell" id="gTV-IL-0wX" customClass="SurveyCollectionViewIntroductionCell" customModule="Beginning" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxe-pM-ljz">
+                        <rect key="frame" x="12" y="12" width="390" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYQ-HO-W4l">
+                        <rect key="frame" x="12" y="69.5" width="390" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Dxe-pM-ljz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="185-90-q7k"/>
+                <constraint firstAttribute="trailing" secondItem="Dxe-pM-ljz" secondAttribute="trailing" constant="12" id="GXb-mc-za3"/>
+                <constraint firstAttribute="bottom" secondItem="UYQ-HO-W4l" secondAttribute="bottom" constant="60" id="Iyf-OI-HJ4"/>
+                <constraint firstItem="Dxe-pM-ljz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="PHn-RB-dDk"/>
+                <constraint firstItem="UYQ-HO-W4l" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="QIe-wi-cLz"/>
+                <constraint firstAttribute="trailing" secondItem="UYQ-HO-W4l" secondAttribute="trailing" constant="12" id="hnu-Vd-NRb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="detailLabel" destination="UYQ-HO-W4l" id="SJq-37-2wp"/>
+                <outlet property="titleLabel" destination="Dxe-pM-ljz" id="UbO-ZK-L0q"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
